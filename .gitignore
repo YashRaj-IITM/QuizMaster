@@ -1,0 +1,38 @@
+# Secrets and environment files: commit only the documented example templates
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.db
+venv/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Frontend build/dependencies
+node_modules/
+dist/
+
+# Runtime output
+exports/
+exports_test/
+celerybeat-schedule*
+*.log
+.DS_Store
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Local environment files
+.env
+.env.*
+!.env.example
