@@ -69,12 +69,12 @@ Python 3.10+, Node.js 18+, and (only for background jobs) Redis. MailHog is opti
 
 ### 1. Backend
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>/backend
+git clone https://github.com/YashRaj-IITM/QuizMaster.git
+cd QuizMaster/backend
 python -m venv venv
 source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env              # then replace EVERY placeholder (see below)
+cp .env.example .env              # Windows: copy .env.example .env
 python app.py                     # http://127.0.0.1:5000
 ```
 Tables and the default admin are created automatically on first start.
@@ -178,7 +178,7 @@ The older action-style URLs (`/admin/schedule_monthly_report`, `/admin/get_sched
 
 ## Testing and CI
 
-![CI](https://github.com/<your-username>/<your-repo>/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/![CI](https://github.com/YashRaj-IITM/QuizMaster/actions/workflows/ci.yml/badge.svg)/actions/workflows/ci.yml/badge.svg)
 
 ```bash
 # backend (46 tests, in-memory database, Celery runs eagerly - no Redis or SMTP needed)
@@ -188,7 +188,7 @@ cd backend && pip install -r requirements-dev.txt && python -m pytest -q
 cd frontend && npm ci && npx vue-cli-service lint --no-fix && npm run build
 ```
 
-The GitHub Actions workflow runs both on every push to `main` / `master` and on pull requests. Replace `<your-username>/<your-repo>` in the badge URL above after you publish the repository.
+The GitHub Actions workflow runs both on every push to `main` / `master` and on pull requests. Replace `![CI](https://github.com/YashRaj-IITM/QuizMaster/actions/workflows/ci.yml/badge.svg)` in the badge URL above after you publish the repository.
 
 ## Demo walkthrough (about 3 minutes)
 
